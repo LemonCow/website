@@ -1,0 +1,67 @@
+p {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+#contact-info {
+    list-style-type: none;
+    font-size: x-large;
+}
+
+.contact-child {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#email-button {
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+#close {
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+#close:hover{
+    text-decoration: none;
+}
+
+#form-container {
+    text-align: right;
+}
+
+#email-send {
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+
+#sendResults {
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:756px) {
+
+    #about-me-info {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    #contact-info {
+        text-align: center;
+    }
+   
+}
+
+
+

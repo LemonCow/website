@@ -1,0 +1,31 @@
+.trail-left {
+    font-size: large;
+}
+
+#trail-right {
+    font-size: large;
+}
+
+#trail-right-mobile {
+    display: none;
+    justify-content: flex-start;
+    font-size: large;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:756px) {
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    
+}
+
+

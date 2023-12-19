@@ -1,0 +1,84 @@
+body {
+    background-color: #523a06;
+}
+
+.section-title {
+    font-size: xx-large;
+    background-color:#523a06;
+    color: white;
+}
+
+#background-info {
+    background-color: #755413;
+    color: white;
+}
+
+#contact {
+    background-color: #755413;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/*The contact child CSS code makes sure the links remain the same color regardless if they have been clicked or not*/
+.contact-child:link {
+    color: white;
+}
+
+.contact-child:visited {
+   color: white;
+}
+
+/*This gives the link elements in the list a outline once hovered over*/
+.contact-child:hover {
+    outline: white solid 1px;
+    outline-offset: 5px;
+}
+
+/* Changes the default button text to match that of the rest of the list */
+#email-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*This gives the button element in the list a outline once hovered over*/
+#email-button:hover {
+    outline: white solid 1px;
+    outline-offset: 5px;
+}
+
+/*Gives the email popup an opague background */
+.email {
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+#email-content {
+    background-color: #523a06;
+}
+  
+/* Controls the close button's default color */
+#close {
+    background: none;
+    color: white;
+}
+  
+/* Gives the button an outline once hovered over */
+#close:hover {
+    color: black;
+    background-color: #137b24;
+}
+
+/* sets the color of the label in the form to match that of the rest of the page */
+label {
+ color: white;
+}
+
+#sendResults {
+    color: white;
+}
+

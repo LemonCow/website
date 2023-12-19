@@ -1,0 +1,28 @@
+p {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#animals {
+    text-align: center;
+}
+
+figcaption {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+figcaption a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:756px) {
+    .safety-tips {
+        text-align: center;    
+    }
+
+    #animals {
+        text-align: center;
+    }  
+}

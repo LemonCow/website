@@ -1,0 +1,48 @@
+body {
+    background-color: #523a06;
+}
+
+p {
+    color: white;
+}
+
+figcaption {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+#welcome {
+    background-color: #755413; 
+    color: white;
+}
+
+
+.preview-box {
+    background-color: #755413;
+
+}
+
+/*The link and visited code helps maintain the symbol's color even after you click on it */
+.symbol-child:link {
+    color: white;
+}
+
+.symbol-child:visited {
+    color: white;
+}
+
+/*Changes the color of each symbol green to indicate that its a link and can be used*/
+.symbol-child:hover {
+    color: green;
+}
+
+figcaption a {
+    color: white;
+}
+
+figcaption a:hover {
+    text-decoration: underline 1px white;
+}

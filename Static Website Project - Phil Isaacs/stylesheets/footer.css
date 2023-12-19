@@ -1,0 +1,39 @@
+/* This sets the entire html file to be relative, so that the footer will be at the bottom of the screen, rergardless of viewport size */
+html {
+    position: relative;
+    color: #523a06;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: -1%;
+    margin-top: 2%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    font-size: large;
+
+    background-color: grey;
+    position: absolute;
+    bottom: -10%;
+    width:100%;
+    
+}
+
+.extra {
+    width: 90%;
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:756px) {
+    /* Decreases the amount of distance the footer is from the body, so as to decrease the page height on smaller screens */
+    footer {
+        bottom: -7%;    
+    }
+   
+}

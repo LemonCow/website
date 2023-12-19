@@ -1,0 +1,37 @@
+body {
+    background-color: #523a06;
+}
+
+.trail-left {
+    background-color:#755413;
+
+}
+
+#trail-right {
+    background-color: #755413;
+}
+
+#trail-right-mobile {
+    background-color: #755413;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.fa-star-half-alt {
+    color: gold;
+}
+
+.stars {
+    font-size: 40px;
+}
+

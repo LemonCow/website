@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trails Blog</title>
+    <link rel = "stylesheet" href = "stylesheets/footer.css">
+    <link rel = "stylesheet" href = "stylesheets/header.css">
+    <link rel = "stylesheet" href = "stylesheets/stylesheets-about/about-me-spaces.css">
+    <link rel = "stylesheet" href = "stylesheets/stylesheets-about/about-me-colors.css">
+    <link rel = "stylesheet" href = "stylesheets/stylesheets-about/about-me-text.css">
+</head>
+<body>
+
+    <header class = "title">
+        <h1 class = "title-name">The Best Parks and Hiking Trails in Virginia</h1>
+        <nav class>
+            <ul class = "links">
+                <li><a class = "link-child" href = "index.html">Home</a></li>
+                <li><a class = "link-child" href = "trails.html">Trails</a></li>
+                <li><a class = "link-child" href = "parks.html">National Parks</a></li>
+                <li><a class = "link-child" href = "safety.html">Safety Tips</a></li>
+                <li><a class = "link-child" href = "about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--I have this h2 outside of the section for stylistic purposes, as I wanted it hovering just above the section box to make this pages layout more distinct-->
+        <h2 class = "section-title">About Me</h2>            <!--This div box is for formating and spacing of text you see in the box with my picture-->
+        <div id = "background-info">
+                <img src = "images/about-me/IMG-1352.jpeg" alt = "Picture of me with a JMU hat at the beach">
+                <div id = "about-me-info">
+                    <h3>Hi, I'm Philip Isaacs</h3>
+                    <p>I am a current student at JMU and majoring in Information Technology with a minor in Honors Studies.</p>
+                    <p>Some of my hobbies include playing video games, competing in sporting clays events, and spending time with friends and family.</p>
+                    <p>My current future plans are to graduate with my Bachelor's and to continue my education into a Master's or even a Ph.D program of some sort.</p>
+                    <p>While I don't hike as much as I used to, growing up me and my family have been on numerous hike and trails throughout Virginia!</p>
+                    <p>My hiking experience ranges from simple 1-mile trails to 3-mile tracks up and down into the mountains.</p>
+                </div>
+        </div>
+        
+        <h2 class = "section-title">Contact and Social Media</h2>
+        <div id = "contact">
+            <!--This div box acts as a container for the below contact info, and provides formating and spacing-->
+                <nav>
+                    <!--This class is for reformating how the list looks, and the child contact class is for reformating the links within the list itself excluding the button-->
+                    <ul id = "contact-info">
+                        <li><button onclick = "openEmail()" id = "email-button">Email</button></li>
+                        <li><a class = "contact-child" href = "https://www.instagram.com/lemoncow101/">Instagram</a></li>
+                        <li><a class = "contact-child" href = "https://www.facebook.com/profile.php?id=100075904099447">Facebook</a></li>
+                        <li><a class = "contact-child" href = "https://twitter.com/LemonCow101">Twitter</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+        <!-- This section is entirely dedicated to my email popup window when you click on the email button-->
+        <section>
+            <div id="myEmail" class="email">
+
+                <!-- Modal content -->
+                <div id="email-content">
+                  <button onclick="closeEmail()" id = "close">&times;</button>
+                  <br><br>
+                  <div id = "form-container">
+                    <form>
+                        <label for = "reciever">To:</label> <input id="reciever" type="text">
+                    </form>
+                    <form>
+                        <label for = "sender">From:</label> <input id="sender" type="text">
+                    </form>     
+                    <form>
+                        <label for = "title">Title:</label> <input id="title" type="text">
+                    </form>   
+                    <form>
+                        <label for = "body">Message:</label> <textarea id="body"></textarea>
+                    </form> 
+                    <button onclick = "sendEmail()" id = "email-send">Send Email</button>
+                    <span id = "sendResults"></span>               
+                </div>
+            </div>  
+              
+              </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class = "extra">&#169; 2022 Philip Charles Isaacs</p>
+    </footer>
+    
+    <script src="javascript/about-me/about-me.js"></script>
+</body>
+</html>
+
+

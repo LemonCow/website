@@ -1,0 +1,31 @@
+body {
+    background-color: #523a06;
+}
+
+p {
+    color: white;
+}
+
+.safety-tips {
+    background-color: #755413;
+}
+
+#animals {
+    background-color: #755413;
+}
+
+h2 {
+    color: white;
+}
+
+#animals-figholder {
+    color: white;
+}
+
+figcaption a {
+    color: white;
+}
+
+figcaption a:hover {
+    text-decoration: underline 1px white;
+}

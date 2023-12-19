@@ -1,0 +1,162 @@
+body {
+    margin: 0 auto;
+}
+
+/* Creates the format of the review boxes with images on the left
+The overflow tag is to prevent the scrollbar from appearing due to the stars being hidden. The same is true for the trail right section*/
+.trail-left {
+    display: flex;
+    font-size: large;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    width: 90%;
+
+    overflow: hidden;
+
+}
+
+/*This helps contain the text of the trail left sections, as it needs different spacing requirements compared to the trail right sections */
+.review-left {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 5%;
+}
+
+/* Creates the format of the review box that has an image on the right side*/
+#trail-right {
+    display: flex;
+    justify-content: flex-start;
+    font-size: large;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    width: 90%;
+
+    overflow: hidden;
+
+}
+
+/* This code hides the mobile version of the right trail section by default, and attempts to make it similar in format to the previous trail-left boxes*/
+#trail-right-mobile {
+    display: none;
+    justify-content: flex-start;
+    font-size: large;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    width: 90%;
+    position: relative;
+}
+
+#review-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 1%;
+    margin-top: 5%;
+}
+
+/* The stars only appear after hovering over the box of said review, and show my overall rating of each trail out of 5 stars.
+The animation tag is paused and is instead tied to hovering over the respective box for the stars to appear.
+*/
+.stars {
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+    animation-name: star-right-to-left;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-play-state: paused; 
+}
+
+.trail-left:hover .stars {
+    animation-play-state: running; 
+}
+
+#trail-right:hover .stars {
+    animation-play-state: running; 
+}
+
+/*All the images have static values to create more consistency, since the personal images I used varied wildley in height and width*/
+img {
+    width: 400px;
+    height: 450px;
+}
+
+
+/* The stars intital position is far off to the left of the section box and has a low opacity to make it invisible
+The perctanges represents the relative timing of the animation at that point, and it gradually increases the opacity and position of the 
+star back to its original state to give a fade in effect*/
+@keyframes star-right-to-left {
+    0% {
+      opacity: 0;
+      left: 50%;
+    }
+    75% {
+        opacity: 0;
+    }
+    90% {
+        opacity: .33;
+    }
+    100% {
+      opacity: 1;
+      left: 0%;
+    }
+}
+
+@media screen and (max-width:756px) {
+    /*This sets the original trail left sections to flow vertically to make it easier to read the reviews
+    I also increased the margins, as it felt cramped otherwise*/
+    .trail-left {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* Since this version of trail right is not condusive to smaller screens, this code hides it as is replaced by its mobile version */
+    #trail-right {
+        display: none;
+    }
+
+    #trail-right-mobile {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* I changed the layout of the image to be in the middle to make seeing the images easier.
+    Since its now in the middle of the screen I can set perctanges instead of static values and not have it look ugly. */
+    img {
+        margin-top: 4%;
+        align-self: center;
+
+        width: 95%;
+        height: max-content;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /*Since you can't hover with a mouse on mobile phones, I turned the animation*/
+    .stars {
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 4%;
+        animation: none; 
+    }
+
+    
+}
+
+

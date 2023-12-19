@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+}
+
+/* This sets the div box in the middle of the screen and acts as the introduction to my website */
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-left: 9%;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+/* This is code for two containers that are parents of the boxes you see in the main body of the page*/
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 2%;
+
+    justify-content: space-evenly;
+    
+}
+
+/*This is postioning and size for the boxes you see on the main menu */
+.preview-box {
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+/* Both the figure and img styling here is meant to make all the images look nice and uniform due to each images unique sizes and required citations*/
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+img {
+    width: 90%;
+    object-fit: contain;
+    margin-top: 4%;
+}
+
+/* This code helps move the actual important information of each box closer to the title of each article.
+It also gives the text more breathing room, since by default the text touched the eaches of the article box*/
+.preview-text {
+    margin-top: -7%;
+    padding: 5%;
+    font-size: large;
+}
+
+
+/*Sets the page into a vertical format to fit small screeens and such*/
+@media screen and (max-width:756px) {
+
+    /* Helps maintain the large screen look by centering the text of the welcome box */
+    #welcome {
+        text-align: center;
+    }
+
+    /* Aligns the text inside the articles to make it easier to read on small screens
+    It also greatly increases the width of the article to make it easier to read */
+    .preview-box {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10%;
+        
+    }
+    
+    /* This changes the articles from being horizontal from each other to being vertical to make it easier to navigate and read  */
+    .preview-container {
+        flex-direction: column;
+    }
+
+ 
+}
+
+
+
+

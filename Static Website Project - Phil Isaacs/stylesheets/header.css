@@ -1,0 +1,77 @@
+/*This sets the coloring of the website's navigation title, and is the container that holds all the objecst shown below*/
+.title {
+    background-color: #137b24;
+    color: white;
+
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+/*This formats the title message seen at the top of ever page*/
+.title-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+
+    margin-top: -.1%;
+    padding-top: 1%;
+}
+
+/*All of this is to ensure the list looks nice on each page */
+.links {
+    list-style-type: none;
+    font-size: x-large;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0;
+    padding-top: .2%;
+    padding-bottom: .2%;
+
+    background-color: #41AA27;
+}
+
+/*These link child elements are to ensure that the color of the links doesnt change once clicked */
+.link-child:link {
+    display: flex;
+    text-decoration: none;
+
+    color: white;
+    font-family: sans-serif;
+}
+
+.link-child:visited {
+    display: flex;
+    text-decoration: none;
+
+    color: white;
+}
+
+/* Adds an underline once hovered over to indicate that its a link */
+.link-child:hover {
+    text-decoration: underline 3px white;
+}
+
+@media screen and (max-width:756px) {
+    /*Sets the entire header to be sticky to make it easier to navigate on mobile devices*/
+    .title {
+        position: sticky;
+    }
+    .title-name {
+        text-align: center;
+    }
+
+    /*Sets the links to be vertical instead of horizontal to make it easier to read and to click on on smaller windows*/
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+    }
+}
+
+
